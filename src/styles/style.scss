@@ -1,0 +1,36 @@
+@import 'mixins';
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+body, ul, ol {
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+button, input {
+  font-family: "Ubuntu", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+@import './src/blocks/header/header';
+@import './src/blocks/content-area/content-area';
+@import './src/blocks/main/main';
+@import './src/blocks/offers/offers';
+@import './src/blocks/timer/timer';
+@import './src/blocks/options/options';
+@import './src/blocks/sidebar/sidebar';
+@import './src/blocks/sidebar/sidebar';

@@ -1,0 +1,28 @@
+mixin options(modifier)
+  section.options&attributes(attributes)
+    .options__box
+      .options__option
+        .options__icon
+          include ./img/optMsg.svg
+        p.options__text Отправлять сообщения
+      .options__option
+        .options__icon
+          include ./img/optHeart.svg
+        p.options__text Пользоваться другими премиум функциями
+      .options__option.options__option--left
+        .options__icon
+          include ./img/optGift.svg
+        p.options__text Оплачивать подарки
+      img.options__image(src="img/bigdiamond.svg", alt="")
+      .options__option.options__option--right
+        .options__icon
+          include ./img/optEye.svg
+        p.options__text Просматривать скрытые фото
+      .options__option.options__option--hide
+        .options__icon
+          include ./img/optMsg.svg
+        p.options__text Просматривать скрытые фото
+      .options__option.options__option--hide
+        .options__icon
+          include ./img/optSettings.svg
+        p.options__text Просматривать скрытые фото

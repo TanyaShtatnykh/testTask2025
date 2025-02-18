@@ -1,0 +1,112 @@
+.header {
+  background-color: #9564AA;
+  &__area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 8px 20px;
+  }
+  &__logo-link, &__menu-item--dekstop, &__link-text {
+    display: none;
+  }
+  &__burger {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+    padding: 10px;
+    width: 43px;
+    outline: none;
+    &--open {
+      .header__line {
+        &--top {
+          transform: rotate(45deg);
+          transform-origin: 12% 15%;
+        }
+        &--middle {
+          opacity: 0;
+        }
+        &--bottom {
+          transform: rotate(-45deg);
+          transform-origin: 12% 95%;
+        }
+      }
+    }
+  }
+  &__line {
+    height: 2px;
+    background-color: #ffffff;
+    transform: rotate(0deg);
+    transition: 0.3s ease all;
+  }
+  &__menu-link--bg {
+    display: flex;
+    padding: 10px;
+  }
+  @media screen and (min-width: 768px) {
+    &__area {
+      padding: 10px 20px 16px;
+    }
+    &__logo-link {
+      display: block;
+      font-size: px-to-em(32);
+      line-height: lh-to-pct(55, 48);
+      font-weight: 700;
+      color: #ffffff;
+      text-decoration: none;
+    }
+    &__burger {
+      display: none;
+    }
+    &__menu-list {
+      display: flex;
+      align-items: center;
+      column-gap: 20px;
+    }
+    &__menu-item, &__link-text {
+      display: flex;
+    }
+    &__menu-link {
+      display: flex;
+      align-items: center;
+      font-size: px-to-em(12);
+      line-height: lh-to-pct(18, 16);
+      font-weight: 700;
+      color: #ffffff;
+      text-decoration: none;
+      &--bg {
+        column-gap: 6px;
+        padding: 4px 10px;
+        border-radius: 10px;
+        background: #684677;
+        color: #ffcf2d;
+      }
+    }
+  }
+  @media screen and (min-width: 992px) {
+    &__area {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 10px 15px 20px;
+    }
+    &__logo-link {
+      font-size: px-to-em(48);
+    }
+    &__menu-list {
+      column-gap: 40px;
+    }
+    &__menu-link {
+      font-size: px-to-em(16);
+      &:hover {
+        color: #ffcf2d;
+      }
+      &--bg {
+        column-gap: 10px;
+        padding: 6px 13px;
+        &:hover {
+          background: #33223a;
+        }
+      }
+    }
+  }
+}

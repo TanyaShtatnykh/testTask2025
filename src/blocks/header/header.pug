@@ -1,0 +1,16 @@
+mixin header(modifier)
+  header.header&attributes(attributes)
+    .header__area
+      a.header__logo-link(href="/") Logo
+      .header__burger
+        .header__line.header__line--top
+        .header__line.header__line--middle
+        .header__line.header__line--bottom
+      nav.header__menu
+        ul.header__menu-list
+          li.header__menu-item.header__menu-item--dekstop.header__menu-item: a.header__menu-link(href="#") People nearby
+          li.header__menu-item.header__menu-item--dekstop: a.header__menu-link(href="#") Search
+          li.header__menu-item
+            a.header__menu-link.header__menu-link--bg(href="#")
+              span.header__link-text Premium
+              include ./img/diamond.svg

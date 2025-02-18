@@ -1,0 +1,47 @@
+mixin offers(modifier)
+  section.offers&attributes(attributes)
+    .offers__list
+      .swiper-slide
+        .offers__item
+          .offers__prices
+            span.offers__price.offers__price--cr 50
+            span.offers__price.offers__price--dollar $5
+          button.offers__btn(type="button") Buy now
+      .swiper-slide
+        .offers__item
+          p.offers__prices
+            span.offers__price.offers__price--cr 150
+            span.offers__price.offers__price--dollar $15
+          button.offers__btn(type="button") Buy now
+      .swiper-slide
+        .offers__item
+          p.offers__prices
+            span.offers__price.offers__price--cr 300
+            span.offers__price.offers__price--dollar $30
+          button.offers__btn(type="button") Buy now
+      .swiper-slide
+        .offers__item
+          p.offers__prices
+            span.offers__price.offers__price--cr 500
+            span.offers__price.offers__price--dollar $50
+          button.offers__btn(type="button") Buy now
+      .swiper-slide
+        .offers__item
+          p.offers__prices
+            span.offers__price.offers__price--cr 1000
+            span.offers__price.offers__price--dollar $100
+          button.offers__btn(type="button") Buy now
+      .swiper-slide
+        .offers__item
+          p.offers__prices
+            span.offers__price.offers__price--cr 1000
+            span.offers__price.offers__price--dollar $100
+          button.offers__btn(type="button") Buy now
+    button.offers__btn.offers__btn--mobile(type="button") Try now
+    .offers__agree
+      input.offers__checkbox(type="checkbox" checked id="check" disabled)
+      label.offers__label(for="check")
+        | By clicking Checkbox you agree and accept our 
+        a.offers__link(href="#") Privacy Policy
+        | , and 
+        a.offers__link(href="#") Terms of use

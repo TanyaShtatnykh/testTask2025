@@ -1,0 +1,37 @@
+mixin sidebar(modifier)
+  aside.sidebar&attributes(attributes)
+    .sidebar__profile
+      img.sidebar__photo(src="img/avatar.jpg", alt="")
+      .sidebar__info
+        p.sidebar__name Test2412
+        a.sidebar__premium-link(href="#") Get premium
+    nav.sidebar__menu
+      ul.sidebar__menu-list
+        li.sidebar__menu-item
+          a.sidebar__menu-link(href="#") 
+            include ./img/user.svg
+            | Profile
+        li.sidebar__menu-item
+          a.sidebar__menu-link(href="#") 
+            include ./img/photo.svg
+            | My photos
+        li.sidebar__menu-item
+          a.sidebar__menu-link(href="#") 
+            include ./img/message.svg
+            | Messages
+        li.sidebar__menu-item
+          a.sidebar__menu-link(href="#") 
+            include ./img/heart.svg
+            | Favorites
+        li.sidebar__menu-item
+          a.sidebar__menu-link(href="#") 
+            include ./img/eye.svg
+            | Guests
+        li.sidebar__menu-item
+          a.sidebar__menu-link(href="#") 
+            include ./img/setting.svg
+            | Settings
+        li.sidebar__menu-item
+          a.sidebar__menu-link(href="#") 
+            include ./img/exit.svg
+            | Log out
