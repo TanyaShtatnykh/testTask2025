@@ -37,6 +37,7 @@ $(function () {
   window.addEventListener('resize', onSlider);
 });
 
+
 $(function () {
   let timer = document.querySelector('.timer__timer');
   let time = 600;
