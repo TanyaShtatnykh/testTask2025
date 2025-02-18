@@ -25,6 +25,14 @@ h1,h2,h3,h4,h5,h6,p{
   margin: 0;
   padding: 0;
 }
+body {
+  @media screen and (min-width: 1200px) {
+    background-image: url(../img/bg1.png), url(../img/bg2.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 5% bottom, right 320%;
+    background-attachment: fixed;
+  }
+}
 
 @import './src/blocks/header/header';
 @import './src/blocks/content-area/content-area';
